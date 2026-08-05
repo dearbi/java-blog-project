@@ -53,7 +53,7 @@
                     if (result.code == 200 && result.data != "") {
                         var response = result.data;
                         localStorage.setItem("user_token", response.token);
-                        localStorage.setItem("loginUserId", response.userId);
+                        localStorage.setItem("loginUserId", response.id);
                         location.assign("blog_list.html");
                     } else {
                         alert("⽤户名或密码错误");
